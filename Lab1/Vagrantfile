@@ -1,0 +1,39 @@
+Vagrant.configure("2") do |config|
+  # Define the boxes to use
+  boxes = [
+    { name: "fedora28", box: "generic/fedora28", hostname: "knowledgeira-fedora" },
+    { name: "ubuntu2204", box: "generic/ubuntu2204", hostname: "knowledgeira-ubuntu" },
+    { name: "debian10", box: "bento/debian-10", hostname: "knowledgeira-debian" },
+    { name: "rocky9", box: "generic/rocky9", hostname: "knowledgeira-rocky" },
+    { name: "arch", box: "generic/arch", hostname: "knowledgeira-arch" }
+  ]
+
+  # Loop through the boxes and configure each VM
+  boxes.each_with_index do |box, index|
+    config.vm.define box[:name] do |machine|
+      machine.vm.box = box[:box]
+      machine.vm.hostname = box[:hostname] # Set unique hostnames
+
+      # Configure a private network with a unique IP for each machine
+      machine.vm.network "private_network", ip: "192.168.56.#{10+index}"
+
+      # Provisioning script to create the 'mj' user with no password
+      machine.vm.provision "shell", inline: <<-SHELL
+        # Ensure sudo is available, especially for minimal images
+        which sudo || (apt-get update && apt-get install -y sudo || yum install -y sudo || pacman -Sy sudo)
+
+        # Add the 'mj' user with a password
+  	useradd -m -s /bin/bash mj || adduser --disabled-password --gecos "" mj
+  	sudo sh -c "echo 'mj:1' | chpasswd"
+        echo 'mj ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers
+
+        # Enable SSH password authentication
+ 	sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
+  	systemctl restart sshd || service ssh restart
+
+        # Set hostname to the specific VM's name
+        hostnamectl set-hostname #{box[:hostname]}
+      SHELL
+    end
+  end
+end
