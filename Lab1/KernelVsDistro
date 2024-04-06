@@ -1,1 +1,28 @@
+This post tries to explain difference Between Kernel Vs Distribution.
 
+Let's use a practical example involving car brands like Tata, Mahindra, Toyota, and Hyundai as the "distributions," and the engine as the "kernel" to make this clear.
+
+The Engine (Kernel)
+Think of the engine of a car as the kernel in a Linux system. The engine is the core part of the car that makes it run. It's responsible for converting fuel into motion and powers everything in the car, from the wheels to the electrical system. Similarly, the Linux kernel is the core part of any Linux operating system. It communicates between the computer's hardware and the software you use, managing resources and allowing your software to run.
+
+
+Car Brands (Distributions)
+Now, consider different car brands like Tata, Mahindra, Toyota, and Hyundai as different Linux distributions. Each brand offers various cars, from compact cars to SUVs, just like how each Linux distribution offers different environments and tools for its users. These car brands design their vehicles to meet different needs and preferences, incorporating the engine in a way that best suits the design and purpose of each car. 
+For instance:
+
+    Tata might offer a robust car designed for rugged Indian roads, akin to a Linux distribution that's stable and reliable for server use (like CentOS).
+    Mahindra focuses on SUVs, similar to a distribution tailored for performance and heavy-duty use (like Fedora).
+    Toyota is known for reliability and efficiency, paralleling a user-friendly and widely-supported Linux distribution (like Ubuntu).
+    Hyundai offers cars with advanced technology and design, similar to a cutting-edge, feature-rich distribution (like Arch Linux).
+
+
+"Imagine if the only thing car manufacturers could change about their cars was the outer design and features, but they all had to use the same engine. This engine is like the Linux kernel - it's the same core component that powers every Linux system, no matter which version or 'brand' you choose. But just like cars, where you might choose a Tata for its ruggedness or a Toyota for its efficiency, you choose a Linux distribution based on what you need. Do you want something stable and reliable? Maybe you'd go for the 'Tata' of Linux. Looking for something with lots of new features and technology? Then you might want the 'Hyundai' of Linux."
+
+Ubuntu Releases to Beginners
+
+
+"Think of each new version of Ubuntu like the yearly update of a Toyota car. Every year, Toyota might release a new version of a car model, with updates like a nicer interior, better fuel efficiency, or even new colors. Ubuntu does the same thing with its operating system. Every six months, a new 'model' of Ubuntu comes out. These updates can make Ubuntu run smoother, look better, or be more secure.
+
+Just like with cars, not all changes are about adding new things; some are about fixing problems. If last year's Toyota had a problem with the air conditioning, this year's model might have that fixed. Ubuntu updates can fix problems from earlier versions too.
+
+And, just like car models, older versions of Ubuntu eventually stop getting updates from the company. This doesn't mean your 'car' stops working, but you won't get new features or safety updates, so it's a good idea to 'upgrade to the newer model' when you can."
