@@ -1,0 +1,46 @@
+URLs for the resources and topics we've discussed:
+Linux Kernel Source Code on GitHub
+
+    Linux Kernel GitHub Repository: https://github.com/torvalds/linux
+
+Distrowatch
+
+    Distrowatch Website: https://distrowatch.com/
+        Distrowatch is a website dedicated to talking about, reviewing, and keeping up to date with open source operating systems, with a strong focus on Linux distributions.
+
+Canonical and Ubuntu
+
+    Canonical Ltd.: https://canonical.com/
+        Canonical is the company behind Ubuntu, focusing on the development and commercial support of Ubuntu projects.
+    Ubuntu Linux: https://ubuntu.com/
+        The official website for Ubuntu, offering downloads, documentation, and support for the Ubuntu Linux distribution.
+
+cloc (Count Lines of Code)
+
+    While cloc doesn't have a dedicated website, you can find it on GitHub and installation instructions in its documentation:
+        cloc on GitHub: https://github.com/AlDanial/cloc
+
+Linux Foundation (LF)
+
+    Linux Foundation: https://www.linuxfoundation.org/
+        The Linux Foundation supports the creation of sustainable open source ecosystems. It hosts projects, such as the Linux kernel, and provides funding, training, and events to support the open source community.
+
+My GitHub Link
+
+    Linux Commands for Beginners: https://github.com/knowledgeira/LinuxCommandsForBegineers/blob/mj/Lab1/get_distro_info.sh
+        This link leads to a script intended to help beginners fetch information about their Linux distribution.
+
+Linux From Scratch (LFS)
+
+    Linux From Scratch: http://www.linuxfromscratch.org/
+        LFS provides you with step-by-step instructions to build your own custom Linux system, entirely from source code.
+
+Kernel.org
+
+    Linux Kernel Archive: https://www.kernel.org/
+
+    On this website, you can find:
+        The latest stable and long-term support (LTS) kernel releases.
+        Pre-release kernels and patches for testing.
+        Documentation for the Linux kernel.
+        Various tools and utilities related to kernel development.
